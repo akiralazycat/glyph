@@ -5,10 +5,13 @@ import { GlyphMark } from "./glyph-icons";
 import { StudioPanels } from "./glyph-controls";
 import { GlyphPreviews } from "./glyph-previews";
 import { GlyphDiagnostics } from "./glyph-diagnostics";
+import { HouseBar } from "./house-bar";
 
 export function GlyphStudioV2() {
   const studio = useGlyphStudio();
-  return <main className="shell">
+  return <>
+    <HouseBar product="Glyph" />
+    <main className="shell">
     <header className="topbar">
       <a className="brand" href="#top" aria-label="Glyph home"><GlyphMark /><span>Glyph</span></a>
       <nav className="nav" aria-label="Primary navigation"><a href="#studio">Studio</a><a href="#diagnostics">Diagnostics</a><a href="https://github.com/akiralazycat/glyph" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></nav>
@@ -32,5 +35,6 @@ export function GlyphStudioV2() {
     </section>
 
     <footer><a className="brand brand--footer" href="#top"><GlyphMark compact /><span>Glyph</span></a><p>One mark, every surface.</p><span>Open source · MIT</span></footer>
-  </main>;
+    </main>
+  </>;
 }
