@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./diagnostics.css";
 
 export const metadata: Metadata = {
   title: "Glyph — Icon studio for every surface",
   description:
-    "Generate, inspect, and export production-ready favicons, Apple touch icons, and PWA icons from one source image.",
+    "Generate, inspect, diagnose, and export platform-aware favicons, Google Search icons, Apple touch icons, PWA masks, and pinned-tab SVGs.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
