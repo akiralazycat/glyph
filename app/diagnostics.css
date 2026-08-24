@@ -12,8 +12,8 @@
 .vector-status__dot { width: 7px; height: 7px; border-radius: 50%; background: #aaa; }
 .vector-status__dot.is-ready { background: #58a63d; box-shadow: 0 0 0 3px rgba(88,166,61,.12); }
 .vector-status div { display: flex; min-width: 0; flex-direction: column; gap: 3px; }
-.vector-status strong { font-size: 9px; }
-.vector-status span:last-child { color: #92938c; font-size: 8px; line-height: 1.35; }
+.vector-status strong { font-size: 11px; }
+.vector-status span:last-child { color: #92938c; font-size: 11px; line-height: 1.35; }
 .mask-color-control { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 12px; }
 .mask-color-control .control-label { display: block; margin: 0; }
 .mask-color-control .control-label span { display: block; }
@@ -21,14 +21,14 @@
 .mask-color-well { position: relative; width: 34px; height: 34px; border-radius: 9px; overflow: hidden; border: 1px solid rgba(0,0,0,.12); }
 .mask-color-well input { position: absolute; inset: 0; opacity: 0; width: 100%; height: 100%; cursor: pointer; }
 .asset-check--muted { opacity: .25; }
-.platform-caption { margin: 17px auto 0; max-width: 390px; color: #8a8b84; font-size: 8.5px; line-height: 1.55; text-align: center; }
+.platform-caption { margin: 17px auto 0; max-width: 390px; color: #8a8b84; font-size: 11px; line-height: 1.55; text-align: center; }
 .preview-grid--dark .platform-caption { color: #9ea19c; }
 .google-display-mask { overflow: hidden; }
 
 .diagnostic-section { padding: 112px 0 22px; scroll-margin-top: 28px; }
 .diagnostic-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 32px; }
-.diagnostic-heading h2 { margin: 14px 0 0; max-width: 800px; font-size: clamp(42px, 5vw, 72px); line-height: .96; letter-spacing: -.055em; }
-.diagnostic-button { height: 38px; padding: 0 16px; border: 1px solid var(--ink); border-radius: 9px; background: transparent; cursor: pointer; font-size: 10px; font-weight: 720; }
+.diagnostic-heading h2 { margin: 14px 0 0; max-width: 800px; font-size: clamp(42px, 5vw, 72px); line-height: .96; letter-spacing: 0; }
+.diagnostic-button { height: 38px; padding: 0 16px; border: 1px solid var(--ink); border-radius: 9px; background: transparent; cursor: pointer; font-size: 11px; font-weight: 720; }
 .diagnostic-button:hover:not(:disabled) { background: var(--ink); color: #f7f5ef; }
 .diagnostic-button:disabled { opacity: .45; cursor: wait; }
 .diagnostic-board { display: grid; grid-template-columns: minmax(280px,.72fr) minmax(0,1.6fr); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; background: var(--panel); box-shadow: var(--shadow); }
@@ -36,23 +36,23 @@
 .score-ring { --score: 0; width: 126px; aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center; position: relative; background: conic-gradient(var(--ink) calc(var(--score) * 1%), #e4e2da 0); }
 .score-ring::after { content: ""; position: absolute; inset: 8px; border-radius: 50%; background: var(--panel); }
 .score-ring strong, .score-ring span { position: relative; z-index: 1; }
-.score-ring strong { font-size: 38px; letter-spacing: -.06em; transform: translateY(-3px); }
-.score-ring span { position: absolute; top: 72px; font: 700 8px/1 ui-monospace, SFMono-Regular, Menlo, monospace; color: #8c8e87; }
+.score-ring strong { font-size: 38px; letter-spacing: 0; transform: translateY(-3px); }
+.score-ring span { position: absolute; top: 72px; font: 700 8px/1 var(--font-mono); color: #8c8e87; }
 .score-panel > div:last-child { min-width: 0; }
-.score-kicker { color: #92938c; font: 700 8px/1 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; letter-spacing: .08em; }
-.score-panel h3 { margin: 10px 0 9px; font-size: 25px; letter-spacing: -.04em; }
-.score-panel p { margin: 0; max-width: 300px; color: #777970; font-size: 10px; line-height: 1.6; }
+.score-kicker { color: #92938c; font: 700 8px/1 var(--font-mono); text-transform: uppercase; letter-spacing: .08em; }
+.score-panel h3 { margin: 10px 0 9px; font-size: 25px; letter-spacing: 0; }
+.score-panel p { margin: 0; max-width: 300px; color: #777970; font-size: 11px; line-height: 1.6; }
 .actual-size-panel { padding: 30px 32px 34px; min-width: 0; }
-.actual-size-header { display: flex; justify-content: space-between; color: #8e9089; font: 700 8px/1 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; letter-spacing: .07em; }
+.actual-size-header { display: flex; justify-content: space-between; color: #8e9089; font: 700 8px/1 var(--font-mono); text-transform: uppercase; letter-spacing: .07em; }
 .actual-size-strip { min-height: 235px; display: grid; grid-template-columns: repeat(4, minmax(80px,1fr)); gap: 12px; align-items: end; padding-top: 26px; }
 .actual-size-item { min-width: 0; }
 .actual-size-stage { height: 184px; display: flex; align-items: center; justify-content: center; border: 1px solid #e6e4dd; background-image: linear-gradient(rgba(30,31,28,.035) 1px, transparent 1px),linear-gradient(90deg,rgba(30,31,28,.035) 1px, transparent 1px); background-size: 12px 12px; border-radius: 11px; overflow: hidden; }
 .actual-icon { display: block; flex: 0 0 auto; overflow: hidden; box-shadow: 0 3px 10px rgba(20,20,18,.12); }
 .actual-icon > span { display: block; width: 100%; height: 100%; background-size: contain; background-position: center; background-repeat: no-repeat; }
 .actual-size-copy { padding-top: 10px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 6px; }
-.actual-size-copy strong { font: 750 9px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
-.actual-size-copy span { color: #8e9089; font-size: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.score-pill { min-width: 25px; height: 18px; display: grid; place-items: center; border-radius: 99px; font: 750 8px/1 ui-monospace, SFMono-Regular, Menlo, monospace; font-style: normal; }
+.actual-size-copy strong { font: 750 9px/1 var(--font-mono); }
+.actual-size-copy span { color: #8e9089; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.score-pill { min-width: 25px; height: 18px; display: grid; place-items: center; border-radius: 99px; font: 750 8px/1 var(--font-mono); font-style: normal; }
 .score-pill--good { background: #edf7e8; color: #4c8437; }
 .score-pill--mid { background: #f8f2dd; color: #957323; }
 .score-pill--low { background: #f9e8e5; color: #a44f44; }
@@ -61,32 +61,54 @@
 .metric-card:last-child { border-right: 0; }
 .metric-card__top { display: flex; justify-content: space-between; align-items: start; gap: 10px; }
 .metric-card__top > div { display: flex; flex-direction: column; gap: 5px; }
-.metric-card__top span { color: #93958e; font-size: 8px; }
+.metric-card__top span { color: #93958e; font-size: 11px; }
 .metric-card__top strong { font-size: 11px; }
-.metric-card__top > b { font-size: 24px; letter-spacing: -.05em; }
+.metric-card__top > b { font-size: 24px; letter-spacing: 0; }
 .metric-bars { margin-top: 27px; display: grid; gap: 12px; }
 .metric-bars label { display: grid; grid-template-columns: 54px 1fr 22px; gap: 6px; align-items: center; }
-.metric-bars span, .metric-bars em { color: #898b84; font-size: 7.5px; font-style: normal; }
-.metric-bars em { text-align: right; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.metric-bars span, .metric-bars em { color: #898b84; font-size: 11px; font-style: normal; }
+.metric-bars em { text-align: right; font-family: var(--font-mono); }
 .metric-bars i { height: 3px; background: #e2e1da; border-radius: 99px; overflow: hidden; }
 .metric-bars i b { display: block; height: 100%; background: var(--ink); border-radius: inherit; }
-.metric-card p { margin: 21px 0 0; color: #8d8f88; font-size: 8.5px; line-height: 1.55; }
+.metric-card p { margin: 21px 0 0; color: #8d8f88; font-size: 11px; line-height: 1.55; }
 .safe-orbit { height: 104px; margin-top: 15px; display: grid; place-items: center; }
 .safe-orbit > span { width: 88px; height: 88px; display: block; position: relative; overflow: hidden; }
 .safe-orbit i { position: absolute; inset: 12%; background-size: contain; background-position: center; background-repeat: no-repeat; }
 .safe-orbit b { position: absolute; width: 80%; height: 80%; left: 10%; top: 10%; border: 1px dashed #d8ff65; border-radius: 50%; }
 .diagnostic-notes { margin-top: 18px; padding: 18px 21px; border: 1px solid var(--line); border-radius: 14px; display: grid; grid-template-columns: 130px 1fr; gap: 20px; background: rgba(251,250,246,.72); }
-.diagnostic-notes > strong { font-size: 10px; }
+.diagnostic-notes > strong { font-size: 11px; }
 .diagnostic-notes > div { display: grid; gap: 6px; }
-.diagnostic-notes p { margin: 0; color: #72746d; font-size: 9px; line-height: 1.55; }
+.diagnostic-notes p { margin: 0; color: #72746d; font-size: 11px; line-height: 1.55; }
 .diagnostic-notes p::before { content: "→"; margin-right: 7px; color: #a0a198; }
 .rules-section { display: grid; grid-template-columns: repeat(4,1fr); margin: 96px 0 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .rules-section article { padding: 30px 26px 34px; border-right: 1px solid var(--line); }
 .rules-section article:first-child { padding-left: 0; }
 .rules-section article:last-child { border-right: 0; padding-right: 0; }
-.rule-platform { color: #8e9089; font: 750 8px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .1em; }
-.rules-section h3 { margin: 22px 0 10px; font-size: 16px; letter-spacing: -.03em; }
-.rules-section p { margin: 0; color: #777970; font-size: 10px; line-height: 1.6; }
+.rule-platform { color: #8e9089; font: 750 8px/1 var(--font-mono); letter-spacing: .1em; }
+.rules-section h3 { margin: 22px 0 10px; font-size: 16px; letter-spacing: 0; }
+.rules-section p { margin: 0; color: #777970; font-size: 11px; line-height: 1.6; }
+
+/* House v1 keeps the icon specimens actual-size and makes their explanation readable. */
+.vector-status strong,
+.vector-status span:last-child,
+.platform-caption,
+.score-kicker,
+.score-panel p,
+.metric-card__top span,
+.metric-card p,
+.diagnostic-notes > strong,
+.diagnostic-notes p,
+.rule-platform,
+.rules-section p {
+  font-size: var(--text-meta);
+  line-height: 1.45;
+}
+
+.diagnostic-button { min-height: 40px; font-size: var(--text-label); }
+
+@media (pointer: coarse) {
+  .diagnostic-button { min-height: 44px; }
+}
 
 @media (max-width: 1180px) {
   .diagnostic-board { grid-template-columns: 1fr; }

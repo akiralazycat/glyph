@@ -5,12 +5,10 @@ import { GlyphMark } from "./glyph-icons";
 import { StudioPanels } from "./glyph-controls";
 import { GlyphPreviews } from "./glyph-previews";
 import { GlyphDiagnostics } from "./glyph-diagnostics";
-import { HouseBar } from "./house-bar";
 
 export function GlyphStudioV2() {
   const studio = useGlyphStudio();
   return <>
-    <HouseBar product="Glyph" />
     <main className="shell">
     <header className="topbar">
       <a className="brand" href="#top" aria-label="Glyph home"><GlyphMark /><span>Glyph</span></a>
